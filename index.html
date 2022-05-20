@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+    <script>
+        /*
+(js#1)
+        function myFunction() {
+            let age = document.getElementById("age").value;
+            let voteable = (age<18) ? "Too young":"old enough";
+            document.getElementById("demo").innerHTML = voteable + "to vote.";
+        }
+
+js#2
+
+        let greeting;
+        const hour = new Date().getHours()
+        if(hour <  18) {
+            greeting="Good day!";
+        }
+        else{
+            greeting = "Good evening"
+        }
+        document.getElementById("demo").innerHTML=greeting
+js#3
+        switch( new Date().getDate()){
+            default: 
+            Text = "looking forword to the weekend"
+            break;
+            case 6:
+                text = "Today is saturday"
+case 0: 
+text ="Today is sunday";
+        }document.getElementById("demo").innerHTML = text;
+
+
+Js#3
+   const cars=["BMW", "Saab", "Ford", "Fait","Audi","Volvo"]
+    let x = " ";
+    for(let i= 0; i < cars.length; i++)    {
+     x +=cars[i]+"<br>"
+    }   
+         document.getElementById("demo").innerHTML = x;
+Js #4
+      var date1 = new Date("06/30/2019")  
+     var date2 = new Date("07/30/2019")  
+      var Difference_In_time = date2.getTime() - date1.getTime();
+     var Difference_In_day = Difference_In_time / 1000 * 3600 * 24;
+     document.write("Total number days b/w two dates<br>"
+     + date1 + "<br> and <br>"
+     + date2 + "is: <br>"
+          + Difference_In_day
+      );
+Js#5
+         document.write(Math.sqrt(64))
+ Js#6
+//Find Area of triangle 
+let l = 5,b=4;
+let Area = 1/2 * l * b
+document.write(Area)
+Js#8
+//swap two variable
+let a = prompt('Enter first variable');
+let b = prompt('Enter Second variable');
+let temp;
+temp = a;
+a= b;
+b= temp;
+document.write ("After swapping the value of a is:<br>"
++ a + "<br> After swapping the value of b is:"
++ b + "<br>"
+)
+JS#9
+//find quadratic equation;(Not working)
+let a = prompt("Enter value of a:");
+let b = prompt("Enter value of b:");
+let c= prompt("Enter value of c:");
+//find discreminent;
+var  disc = b * b - 4 * a * c;
+if(disc > 0){
+var  root1 = (- b + Math.sqrt(disc))/(2 * a);
+var  root2 = (- b - Math.sqrt(disc))/(2 * a);
+
+document.write("<br>" + root1+ + root2 + "<br>") }
+JS#10
+//conversion of km to mile
+let x = prompt("Enter number in Km");
+const factor = .6231;
+const mile = x * factor;
+document.write(mile)
+const min =  parseInt(prompt("Enter a min value:"));
+const max =  parseInt(prompt("Enter a max value:"));
+const a = Math.floor(Math.random() * (max - min + 1)) + min;
+console.log(`Random value between ${min} and ${max} is ${a}`);
+Js#11
+//check enter number is +/- or zero
+let num = prompt("Enter any number :")
+if(num == 0){
+    document.write("your enter number is 0")
+}else if( num > 0 ){
+    document.write("your enter number is Positive");
+}else if( num < 0 ){
+    document.write("Your enter number is negative");
+
+JS#12
+}let numb= prompt("Enter number:")
+console.log(numb)
+switch(numb % 2 == 0){
+    
+    case true:
+         x = "Number is Even";
+         document.getElementById("demo").innerHTML = x
+         break;
+     case false:
+         x = "Number is odd";
+         document.getElementById("demo").innerHTML = x
+        break;
+     
+     default : 
+         x = "you enter wrong entry try again!";
+}
+document.getElementById("demo").innerHTML = x;
+
+JS#13
+//JavaScript Program to Find the Largest Among Three Numbers
+const x = prompt("Enter your first number:");
+const y = prompt("Enter your Second number:");
+const z= prompt("Enter you third number:");
+if(x>y && x> z){
+document.write("First number is greater.")
+}else if(y>x && y> z){
+    document.write("Second number is greater.");
+}else if(z> x && z>y){
+    document.write("Third number is greater.")
+}else{
+    document.write(" Enter numbers are all equal");
+}
+JS#14
+//JavaScript Program to Check Prime Number
+let x = prompt("Enter your number");
+if(x % 2!=0 ){
+document.write("Your enter number is prime")
+}else {
+    document.write("you enter number is not prime")
+}
+Js#15
+//JavaScript Program to Print All Prime Numbers in an Interval(pending.....................)
+
+Js#16
+//JavaScript Program to Find the Factorial of a Number
+let numb = prompt("Enter your number:")
+let fact= 1;
+for(let i=1 ;i<=numb; i++){
+    fact= fact*i;
+}
+document.getElementById("demo").innerHTML=fact;
+JS#17
+//JavaScript Program to Display the Multiplication Table
+let numb = prompt("Enter a number you want table");
+//let lastValue= prompt("Enter you value where you end your table");
+
+ let i=0;
+ document.write('<table border="5" cellspacing="5"');
+for(let i = 1; i <= 10 ; i++){
+  
+document.write( "<br>"+ numb +"x" + i+ "=" +numb * i + "<br>");
+    }
+    JS#18
+//Simple Calculator 
+let operator = prompt("Enter any one Sign '+','-','*','/','%'");
+const numb1 = parseFloat(prompt("Enter your first number:"));
+const numb2 = parseFloat(prompt("Enter your Second number:"));
+let result 
+if(operator == '+'){
+    result = numb1 + numb2
+document.write( ""+ numb1 +""+ operator + numb2 + "=" + result + "<br>")
+   // document.getElementById("demo").innerHTML = result;
+}else if(operator == '-'){
+    result = numb1 - numb2;
+    document.write( "<br>"+ numb1 +""+ operator + + numb2+ "=" + result + "<br>")
+  //  document.getElementById("demo").innerHTML = result;
+}else if(operator == '*'){
+    result = numb1 * numb2;
+    document.write( "<br>"+ numb1 +""+ operator + + numb2+ "=" + result + "<br>")
+ //   document.getElementById("demo").innerHTML = result;
+}else if(operator == '/'){
+    result = numb1 / numb2;
+    document.write( "<br>"+ numb1 +""+ operator + + numb2+ "=" + result + "<br>")
+  //  document.getElementById("demo").innerHTML = result;
+}else(operator == '%')
+{ 
+    result = numb1 % numb2;
+    document.write( "<br>"+ numb1 +""+ operator + + numb2+ "=" + result + "<br>")
+   // document.getElementById("demo").innerHTML = result;
+}
+Js #19
+let arr1=['apple','banna','mangoes'];
+let arr2=['orange','apple','peach']; 
+let common = []
+const commonWords = (arr1, arr2) => {
+for(let i=0;i<= arr1.length; i++){
+
+for(let j=0; j<=arr2.length;j++){
+   if(arr2[j]===arr1[i]){
+
+    common.push(arr2[j]);
+   }
+}
+}
+
+console.log(common)
+}
+JS#20
+commonWords(arr1, arr2);
+
+let arr1=['apple','banna','mangoes'];
+let arr2=['orange','apple','peach']; 
+let commonFruite=[];
+
+const commonWords = (arr1, arr2) =>{
+    arr1.forEach(e1 => {
+        
+            arr2.forEach(e2 =>{
+
+            if(e1==e2){
+            commonFruite.push(e1)
+            }
+                })
+    })
+    console.log(commonFruite)
+}
+commonWords(arr1,arr2)
+
+
+Js#21
+var arr1 = ["a", "b", "c", "d"],
+    arr2 = [1,2,3,4],
+    result = [],
+    i, p = Math.min(arr1.length, arr2.length);
+    
+for (i = 0; i < p; i++) {
+    result.push(arr1[i], arr2[i]);
+    
+}
+result.push(...arr1.slice(p),... arr2.slice(p));
+console.log(result);*/
+
+</script>
+
+</body>
+</html>
